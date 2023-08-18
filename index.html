@@ -19,13 +19,13 @@
                     <h2 class="text-3xl font-medium mb-2">Triangle</h2>
                     <p class="text-2xl font-semibold mb-2">Area (A) = 0.5 * h * b</p>
                     <p>
-                        <input class="bg-gray-200 rounded-md mb-2 font-medium w-1/2 px-4 py-1" type="text" name="" id="" placeholder="Base">
+                        <input class="bg-gray-200 rounded-md mb-2 font-medium w-1/2 px-4 py-1" type="text" name="" id="tiangle-base" placeholder="Base">
                         <span>cm</span>
-                        <input class="bg-gray-200 rounded-md mb-2 font-medium w-1/2 px-4 py-1" type="text" name="" id="" placeholder="Height">
+                        <input class="bg-gray-200 rounded-md mb-2 font-medium w-1/2 px-4 py-1" type="text" name="" id="triangle-height" placeholder="Height">
                         <span>cm</span>
                     </p>
-                    <p class="text-2xl font-medium mb-2">Area: <span></span></p>
-                    <button class="bg-purple-800 text-white px-4 py-2 rounded-xl w-full hover:bg-purple-600">Calculate</button>
+                    <p class="text-2xl font-medium mb-2">Area: <span id="triangle-area"></span></p>
+                    <button onclick="calculatTriangle()" class="bg-purple-800 text-white px-4 py-2 rounded-xl w-full hover:bg-purple-600">Calculate</button>
                 </div>
                 <!-- Second card -->
                 <div class="text-center justify-center drop-shadow-lg bg-white p-4">
@@ -35,13 +35,13 @@
                     <h2  class="text-3xl font-medium mb-2">Recrangle</h2>
                     <p class="text-2xl font-semibold mb-2">Area (A) = w * l</p>
                     <p>
-                        <input class="bg-gray-200 rounded-md mb-2 font-medium w-1/2 px-4 py-1" type="text" name="" id="" placeholder="Width">
+                        <input class="bg-gray-200 rounded-md mb-2 font-medium w-1/2 px-4 py-1" type="text" name="" id="rectangle-width" placeholder="Width">
                         <span>cm</span>
-                        <input class="bg-gray-200 rounded-md mb-2 font-medium w-1/2 px-4 py-1" type="text" name="" id="" placeholder="Length">
+                        <input class="bg-gray-200 rounded-md mb-2 font-medium w-1/2 px-4 py-1" type="text" name="" id="rectangle-length" placeholder="Length">
                         <span>cm</span>
                     </p>
-                    <p class="text-2xl font-medium mb-2">Area: <span></span></p>
-                    <button class="bg-purple-800 text-white px-4 py-2 rounded-xl w-full hover:bg-purple-600">Calculate</button>
+                    <p class="text-2xl font-medium mb-2">Area: <span id="rectangle-area"></span></p>
+                    <button onclick="rectangleCalculate()" class="bg-purple-800 text-white px-4 py-2 rounded-xl w-full hover:bg-purple-600">Calculate</button>
                 </div>
                 <!-- Thired card -->
                 <div class="text-center justify-center drop-shadow-lg bg-white p-4">
@@ -62,5 +62,6 @@
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
