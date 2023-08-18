@@ -38,5 +38,24 @@ function rectangleCalculate(){
     // Set the rectangle area
     const rectangleArea = document.getElementById('rectangle-area');
     rectangleArea.innerText = newRectangle;
+}
 
+// paralal calculate
+function paralalCalculate(){
+    // Get the para base
+    const paraBase = document.getElementById('para-base');
+    const paraBaseString = paraBase.value;
+    const paraBaseNumber = parseFloat(paraBaseString);
+    
+    // get the para base height
+    const paraHeight = document.getElementById('para-height');
+    const paraHeightString = paraHeight.value;
+    const paraHeightNumber = parseFloat(paraHeightString);
+    
+    // Calculate the para area
+    const newPara = paraHeightNumber * paraBaseNumber;
+
+    // set the para area
+    const paraArea = document.getElementById('para-area');
+    paraArea.innerText = newPara;
 }
